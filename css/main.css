@@ -77,7 +77,8 @@ header .bottom-nav .menu {
   height: 50px;
 }
 
-.main-program .mp-content .mp-list {
+.main-program .mp-content .mp-list,
+.featured-speakers .fs-content .speaker-list {
   display: flex;
   flex-direction: row;
 }
@@ -167,7 +168,8 @@ header .bottom-nav .menu {
     align-items: center;
   }
 
-  .main-program .mp-content {
+  .main-program .mp-content,
+  .featured-speakers .fs-content {
     height: auto;
     display: flex;
     flex-direction: column;
@@ -175,20 +177,25 @@ header .bottom-nav .menu {
     align-items: center;
   }
 
-  .main-program .mp-content .mp-list {
+  .main-program .mp-content .mp-list,
+  .featured-speakers .fs-content .speaker-list {
     width: 100%;
     flex-direction: column;
   }
 
-  .main-program .mp-content .mp-list .mp-item {
+  .main-program .mp-content .mp-list .mp-item,
+  .featured-speakers .fs-content .speaker-list .speaker {
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
     margin: 15px 0;
-    background-color: hsl(222, 11%, 17%);
     padding: 10px 0;
+  }
+
+  .main-program .mp-content .mp-list .mp-item {
+    background-color: hsl(222, 11%, 17%);
   }
 
   .main-program .mp-content .mp-list .mp-item p {
@@ -214,5 +221,57 @@ header .bottom-nav .menu {
     font-size: 22px;
     text-decoration: none;
     text-transform: capitalize;
+  }
+
+  .featured-speakers {
+    width: 100%;
+    height: 500px;
+  }
+
+  .featured-speakers .fs-content {
+    width: 100%;
+  }
+
+  .featured-speakers .fs-content .speaker-list .speaker .s-img img {
+    width: 155px;
+  }
+
+  .featured-speakers .fs-content .speaker-list .speaker .s-details {
+    width: 200px;
+  }
+
+  .featured-speakers .fs-content .speaker-list .speaker .s-details p {
+    font-size: 14px;
+  }
+
+  .featured-speakers .fs-content .speaker-list .speaker .s-details .s-bar {
+    width: 35px;
+    height: 3px;
+    background-color: hsl(0, 0%, 83%);
+    border-radius: 4px;
+    margin: 10px 0;
+  }
+
+  .partner {
+    display: none;
+  }
+
+  footer {
+    display: none;
+  }
+
+  .mobile-end {
+    border: 2px solid hsl(0, 0%, 83%);
+    display: flex;
+    align-items: center;
+    height: 55px;
+    border-radius: 8px;
+  }
+
+  .mobile-end .ep {
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    text-decoration: none;
   }
 }
