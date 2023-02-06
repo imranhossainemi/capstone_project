@@ -2,3 +2,15 @@
   margin: 0;
   padding: 0;
 }
+
+.light-black {
+  color: hsl(222, 11%, 17%);
+}
+
+.dark-orange {
+  color: hsl(6, 82%, 59%);
+}
+
+.grey {
+  color: hsl(0, 0%, 83%);
+}
