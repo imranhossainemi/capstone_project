@@ -62,7 +62,31 @@ header .bottom-nav .menu {
   display: none;
 }
 
+.bar {
+  width: 50px;
+  height: 3px;
+  background-color: hsl(6, 82%, 59%);
+  border-radius: 4px;
+}
+
+.page-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+}
+
+.main-program .mp-content .mp-list {
+  display: flex;
+  flex-direction: row;
+}
+
 @media screen and (max-width: 768px) {
+  .container {
+    width: 90%;
+  }
+
   header .top-nav {
     display: none;
   }
@@ -114,6 +138,7 @@ header .bottom-nav .menu {
     font-size: 33px;
     font-weight: 800;
     text-transform: uppercase;
+    width: 350px;
   }
 
   .banner .banner-content .banner-details {
@@ -122,6 +147,7 @@ header .bottom-nav .menu {
     border-radius: 4px;
     background-color: hsl(0, 0%, 83%);
     margin: 25px 0;
+    width: 350px;
   }
 
   .banner .banner-content .event-details h2 {
@@ -133,4 +159,60 @@ header .bottom-nav .menu {
     font-weight: 400;
   }
 
+  .main-program {
+    width: 100%;
+    height: 850px;
+    background-image: url("../images/mp-bg.jpg");
+    display: flex;
+    align-items: center;
+  }
+
+  .main-program .mp-content {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .main-program .mp-content .mp-list {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .main-program .mp-content .mp-list .mp-item {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 15px 0;
+    background-color: hsl(222, 11%, 17%);
+    padding: 10px 0;
+  }
+
+  .main-program .mp-content .mp-list .mp-item p {
+    width: 150px;
+  }
+
+  .main-program .mp-content .mp-list .mp-item h3 {
+    width: 75px;
+  }
+
+  .main-program .mp-content .mp-foot {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .main-program .mp-content .mp-foot a {
+    padding: 25px 30px;
+    background-color: hsl(6, 82%, 59%);
+    color: hsl(0, 0%, 100%);
+    font-size: 22px;
+    text-decoration: none;
+    text-transform: capitalize;
+  }
 }
