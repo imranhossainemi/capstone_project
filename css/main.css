@@ -1,4 +1,19 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: 'Lato', sans-serif;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+.black {
+  color: hsl(222, 11%, 17%);
+}
+
+.orange {
+  color: hsl(6, 82%, 59%);
+}
+
+.grey {
+  color: hsl(0, 0%, 83%);
 }
