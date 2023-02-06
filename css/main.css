@@ -28,3 +28,109 @@ header .top-nav {
   height: 35px;
   background-color: hsl(222, 11%, 17%);
 }
+
+.page-info {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.page-info .info {
+  width: 35%;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+}
+
+header .bottom-nav {
+  width: 100%;
+  height: 75px;
+}
+
+header .bottom-nav .menu {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-mobile-menu {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  header .top-nav {
+    display: none;
+  }
+
+  .nav-mobile-menu {
+    display: block;
+  }
+
+  header .bottom-nav {
+    position: absolute;
+  }
+
+  .nav-mobile-menu button {
+    width: 30px;
+    height: 30px;
+    background-image: url("../images/Hamburger_icon.svg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: none;
+    cursor: pointer;
+  }
+
+  header .bottom-nav .main-menu {
+    display: none;
+  }
+
+  .banner {
+    width: 100%;
+    height: 500px;
+    background-image: url("../images/mobile-background.png");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    align-items: center;
+  }
+
+  .banner .banner-content > p {
+    font-size: 28px;
+  }
+
+  .banner .banner-content .main-title {
+    position: relative;
+    width: 100%;
+  }
+
+  .banner .banner-content .main-title h1 {
+    font-size: 33px;
+    font-weight: 800;
+    text-transform: uppercase;
+  }
+
+  .banner .banner-content .banner-details {
+    padding: 15px;
+    border: 2px solid hsl(0, 0%, 100%);
+    border-radius: 4px;
+    background-color: hsl(0, 0%, 83%);
+    margin: 25px 0;
+  }
+
+  .banner .banner-content .event-details h2 {
+    margin: 10px 0;
+  }
+
+  .banner .banner-content .event-details p {
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+}
