@@ -121,7 +121,7 @@ header .bottom-nav .menu {
     background-image: url("../images/mobile-background.png");
     background-position: top;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     display: flex;
     align-items: center;
   }
