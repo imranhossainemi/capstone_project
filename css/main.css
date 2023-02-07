@@ -58,6 +58,46 @@ header .bottom-nav .menu {
   align-items: center;
 }
 
+header .bottom-nav .menu .main-menu {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+header .bottom-nav .menu  .main-menu .logo {
+  width: 20%;
+  height: fit-content;
+}
+
+header .bottom-nav .menu  .main-menu .logo {
+  width: 20%;
+  height: fit-content;
+}
+
+header .bottom-nav .menu  .main-menu .logo p {
+  font-size: 18px;
+  font-weight: 800;
+}
+
+header .bottom-nav .menu  .main-menu .navigation {
+  width: 60%;
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 50px;
+}
+
+header .bottom-nav .menu  .main-menu .navigation .nav-menu {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  list-style: none;
+}
+
 .nav-mobile-menu {
   display: none;
 }
