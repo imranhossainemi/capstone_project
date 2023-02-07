@@ -63,7 +63,7 @@ header .bottom-nav .menu .main-menu {
   height: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -94,7 +94,7 @@ header .bottom-nav .menu  .main-menu .navigation {
 header .bottom-nav .menu  .main-menu .navigation .nav-menu {
   display: flex;
   flex-direction: row;
-  gap: 50px;
+  gap: 30px;
   list-style: none;
 }
 
@@ -126,7 +126,7 @@ header .bottom-nav .menu  .main-menu .nav-btn {
 
 .banner {
   width: 100%;
-  height: 100vh;
+  height: 90vh;
   background-image: url("../images/home-bg-desk.png");
   background-position: top;
   background-repeat: no-repeat;
@@ -136,7 +136,49 @@ header .bottom-nav .menu  .main-menu .nav-btn {
 }
 
 .banner .banner-content {
-  
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+}
+
+.banner .banner-content > p {
+  font-size: 38px;
+}
+
+.banner .banner-content .main-title {
+  position: relative;
+  width: 100%;
+}
+
+.banner .banner-content .main-title h1 {
+  font-size: 70px;
+  font-weight: 800;
+  text-transform: uppercase;
+  width: 730px;
+  background-image: url("../images/title-bg.jpeg");
+  background-size: cover;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.banner .banner-content .banner-details {
+  padding: 15px;
+  border: 2px solid hsl(0, 0%, 100%);
+  border-radius: 4px;
+  background-color: hsl(0, 0%, 83%);
+  margin: 25px 0;
+  width: 730px;
+}
+
+.banner .banner-content .event-details h2 {
+  margin: 10px 0;
+  font-size: 32px;
+}
+
+.banner .banner-content .event-details p {
+  font-size: 24px;
+  font-weight: 400;
 }
 
 .bar {
@@ -153,6 +195,70 @@ header .bottom-nav .menu  .main-menu .nav-btn {
   align-items: center;
   height: 50px;
 }
+
+.main-program {
+  width: 100%;
+  height: 850px;
+  background-image: url("../images/mp-bg.jpg");
+  display: flex;
+  align-items: center;
+}
+
+.main-program .mp-content,
+.featured-speakers .fs-content {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.main-program .mp-content .mp-list,
+.featured-speakers .fs-content .speaker-list {
+  width: 100%;
+  flex-direction: column;
+}
+
+.main-program .mp-content .mp-list .mp-item,
+.featured-speakers .fs-content .speaker-list .speaker {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin: 15px 0;
+  padding: 10px 0;
+}
+
+.main-program .mp-content .mp-list .mp-item {
+  background-color: hsl(222, 11%, 17%);
+}
+
+.main-program .mp-content .mp-list .mp-item p {
+  width: 150px;
+}
+
+.main-program .mp-content .mp-list .mp-item h3 {
+  width: 75px;
+}
+
+.main-program .mp-content .mp-foot {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-program .mp-content .mp-foot a {
+  padding: 25px 30px;
+  background-color: hsl(6, 82%, 59%);
+  color: hsl(0, 0%, 100%);
+  font-size: 22px;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
 
 .main-program .mp-content .mp-list,
 .featured-speakers .fs-content .speaker-list {
@@ -188,47 +294,37 @@ header .bottom-nav .menu  .main-menu .nav-btn {
     cursor: pointer;
   }
 
-  header .bottom-nav .main-menu {
+  header .bottom-nav .menu .main-menu {
     display: none;
   }
 
   .banner {
-    height: 500px;
+    height: 520px;
     background-image: url("../images/mobile-background.png");
+  }
+
+  .banner .banner-content {
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 
   .banner .banner-content > p {
     font-size: 28px;
   }
 
-  .banner .banner-content .main-title {
-    position: relative;
-    width: 100%;
-  }
-
   .banner .banner-content .main-title h1 {
-    font-size: 33px;
-    font-weight: 800;
-    text-transform: uppercase;
-    width: 350px;
-    background-image: url("../images/title-bg.jpeg");
-    background-size: cover;
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
+    width: 330px;
+    font-size: 31.5px;
   }
-
+  
   .banner .banner-content .banner-details {
-    padding: 15px;
-    border: 2px solid hsl(0, 0%, 100%);
-    border-radius: 4px;
-    background-color: hsl(0, 0%, 83%);
-    margin: 25px 0;
-    width: 350px;
+    width: 330px;
   }
 
   .banner .banner-content .event-details h2 {
-    margin: 10px 0;
+    font-size: 18px;
   }
 
   .banner .banner-content .event-details p {
