@@ -122,7 +122,7 @@ header .bottom-nav .menu .main-menu .nav-btn {
 
 .banner {
   width: 100%;
-  height: 90vh;
+  height: 70vh;
   background-image: url("../images/home-bg-desk.png");
   background-position: top;
   background-repeat: no-repeat;
@@ -203,7 +203,7 @@ header .bottom-nav .menu .main-menu .nav-btn {
 }
 
 .summit .summit-content .sum-com-logo .s-logo {
-  width: 90%;
+  width: 50%;
   height: 200px;
 }
 
@@ -211,6 +211,81 @@ header .bottom-nav .menu .main-menu .nav-btn {
   width: 100%;
   height: 2px;
   background-color: hsl(0, 0%, 83%);
+}
+
+.summit-past {
+  width: 100%;
+  height: 500px;
+}
+
+.summit-past .summit-past-content .sum-past-list {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+}
+
+.summit-past .summit-past-content .card {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 25px 0;
+  position: relative;
+}
+
+.summit-past .summit-past-content .card .content {
+  color: hsl(0, 0%, 100%);
+  z-index: 9999;
+  font-size: larger;
+}
+
+.summit-past .summit-past-content .sum-past-2013 {
+  background-image: url("../images/s-2013.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.summit-past .summit-past-content .sum-past-2011 {
+  background-image: url("../images/s-2011.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: hsla(6, 82%, 59%, 0.649);
+}
+
+.partner {
+  display: none;
+}
+
+footer {
+  width: 100%;
+  height: 150px;
+  background-color: hsl(222, 11%, 17%);
+}
+
+footer .footer-content {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer .footer-content .foot-logo,
+footer .footer-content .foot-info {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  color: hsl(0, 0%, 83%);
 }
 
 @media screen and (max-width: 768px) {
@@ -283,9 +358,18 @@ header .bottom-nav .menu .main-menu .nav-btn {
     margin: 5px 0;
   }
 
+  .summit .summit-content .sum-com-logo .s-logo {
+    width: 90%;
+  }
+
   .summit-past {
     width: 100%;
-    height: 800px;
+    height: 900px;
+  }
+
+  .summit-past .summit-past-content .sum-past-list {
+    flex-direction: column;
+    gap: 0;
   }
 
   .summit-past .summit-past-content .card {
@@ -330,6 +414,7 @@ header .bottom-nav .menu .main-menu .nav-btn {
     width: 100%;
     height: 250px;
     background-color: hsl(252, 4%, 26%);
+    display: block;
   }
 
   .partner .partner-content {
@@ -364,6 +449,7 @@ header .bottom-nav .menu .main-menu .nav-btn {
   footer {
     width: 100%;
     height: 150px;
+    background-color: hsl(0, 0%, 100%);
   }
 
   footer .footer-content {
@@ -372,5 +458,11 @@ header .bottom-nav .menu .main-menu .nav-btn {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+  }
+
+  footer .footer-content .foot-logo,
+  footer .footer-content .foot-info {
+    font-size: 12px;
+    color: hsl(222, 11%, 17%);
   }
 }
