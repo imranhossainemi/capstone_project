@@ -4,6 +4,7 @@
   font-family: 'Lato', sans-serif;
   box-sizing: border-box;
   scroll-behavior: smooth;
+  text-align: center;
 }
 
 .black {
@@ -63,8 +64,8 @@ header .bottom-nav .menu {
 }
 
 .bar {
-  width: 50px;
-  height: 3px;
+  width: 25px;
+  height: 2px;
   background-color: hsl(6, 82%, 59%);
   border-radius: 4px;
 }
@@ -74,7 +75,8 @@ header .bottom-nav .menu {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  height: 50px;
+  height: 120px;
+  margin: 25px 0;
 }
 
 .main-program .mp-content .mp-list,
@@ -117,12 +119,18 @@ header .bottom-nav .menu {
 
   .banner {
     width: 100%;
-    height: 500px;
+    height: 600px;
     background-image: url("../images/mobile-background.png");
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
+    align-items: center;
+  }
+
+  .banner .banner-content {
+    display: flex;
+    flex-direction: column;
     align-items: center;
   }
 
@@ -132,7 +140,6 @@ header .bottom-nav .menu {
 
   .banner .banner-content .main-title {
     position: relative;
-    width: 100%;
   }
 
   .banner .banner-content .main-title h1 {
@@ -140,24 +147,15 @@ header .bottom-nav .menu {
     font-weight: 800;
     text-transform: uppercase;
     width: 350px;
-    background-image: url("../images/title-bg.jpeg");
-    background-size: cover;
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
   }
 
   .banner .banner-content .banner-details {
     padding: 15px;
-    border: 2px solid hsl(0, 0%, 100%);
-    border-radius: 4px;
-    background-color: hsl(0, 0%, 83%);
+    border: 2px solid hsl(0, 0%, 83%);
+    border-radius: 8px;
+    background-color: hsl(0, 0%, 100%);
     margin: 25px 0;
     width: 350px;
-  }
-
-  .banner .banner-content .event-details h2 {
-    margin: 10px 0;
   }
 
   .banner .banner-content .event-details p {
@@ -165,118 +163,121 @@ header .bottom-nav .menu {
     font-weight: 400;
   }
 
-  .main-program {
-    width: 100%;
-    height: 850px;
-    background-image: url("../images/mp-bg.jpg");
-    display: flex;
-    align-items: center;
+  .banner .banner-content .event-details h4 {
+    font-size: 14px;
+    font-weight: 800;
+    text-decoration: underline;
+    margin: 5px 0;
   }
 
-  .main-program .mp-content,
-  .featured-speakers .fs-content {
-    height: auto;
+  .summit {
+    width: 100%;
+    height: 400px;
+  }
+
+  .summit .summit-content {
+    width: 100%;
+  }
+
+  .summit .summit-content .sum-com-logo .logo {
+    width: 90%;
+    height: 200px;
+  }
+
+  .divider {
+    width: 100%;
+    height: 2px;
+    background-color: hsl(0, 0%, 83%);
+  }
+
+  .summit-past {
+    width: 100%;
+    height: 800px;
+  }
+
+  .summit-past .summit-past-content .card {
+    width: 100%;
+    height: 300px;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-  }
-
-  .main-program .mp-content .mp-list,
-  .featured-speakers .fs-content .speaker-list {
-    width: 100%;
-    flex-direction: column;
-  }
-
-  .main-program .mp-content .mp-list .mp-item,
-  .featured-speakers .fs-content .speaker-list .speaker {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    margin: 15px 0;
-    padding: 10px 0;
-  }
-
-  .main-program .mp-content .mp-list .mp-item {
-    background-color: hsl(222, 11%, 17%);
-  }
-
-  .main-program .mp-content .mp-list .mp-item p {
-    width: 150px;
-  }
-
-  .main-program .mp-content .mp-list .mp-item h3 {
-    width: 75px;
-  }
-
-  .main-program .mp-content .mp-foot {
-    width: 100%;
-    height: 100px;
-    display: flex;
     align-items: center;
     justify-content: center;
+    margin: 25px 0;
+    position: relative;
   }
 
-  .main-program .mp-content .mp-foot a {
-    padding: 25px 30px;
-    background-color: hsl(6, 82%, 59%);
+  .summit-past .summit-past-content .card .content {
     color: hsl(0, 0%, 100%);
-    font-size: 22px;
-    text-decoration: none;
-    text-transform: capitalize;
+    z-index: 9999;
+    font-size: larger;
   }
 
-  .featured-speakers {
+  .summit-past .summit-past-content .sum-past-2013 {
+    background-image: url("../images/s-2013.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+
+  .summit-past .summit-past-content .sum-past-2011 {
+    background-image: url("../images/s-2011.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: 500px;
-  }
-
-  .featured-speakers .fs-content {
-    width: 100%;
-  }
-
-  .featured-speakers .fs-content .speaker-list .speaker .s-img img {
-    width: 155px;
-  }
-
-  .featured-speakers .fs-content .speaker-list .speaker .s-details {
-    width: 200px;
-  }
-
-  .featured-speakers .fs-content .speaker-list .speaker .s-details p {
-    font-size: 14px;
-  }
-
-  .featured-speakers .fs-content .speaker-list .speaker .s-details .s-bar {
-    width: 35px;
-    height: 3px;
-    background-color: hsl(0, 0%, 83%);
-    border-radius: 4px;
-    margin: 10px 0;
+    height: 100%;
+    background-color: hsla(6, 82%, 59%, 0.649);
   }
 
   .partner {
-    display: none;
+    width: 100%;
+    height: 250px;
+    background-color: hsl(252, 4%, 26%);
+  }
+
+  .partner .partner-content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .partner-title {
+    height: 50px;
+  }
+
+  .partner-list {
+    width: 100%;
+    height: auto;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 25px;
+  }
+
+  .partner-list .partner-item {
+    width: 100px;
+  }
+
+  .partner-list .partner-item > img {
+    width: 70%;
   }
 
   footer {
-    display: none;
-  }
-
-  .mobile-end {
-    border: 2px solid hsl(0, 0%, 83%);
-    display: flex;
-    align-items: center;
-    height: 55px;
-    border-radius: 8px;
-  }
-
-  .mobile-end .ep {
     width: 100%;
-    text-align: center;
-    padding: 25px 0;
-    text-decoration: none;
+    height: 150px;
+  }
+
+  footer .footer-content {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
   }
 }
