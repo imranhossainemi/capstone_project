@@ -59,8 +59,118 @@ header .bottom-nav .menu {
   align-items: center;
 }
 
+header .bottom-nav .menu .main-menu {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .bottom-nav .menu .main-menu .logo {
+  width: 20%;
+  height: fit-content;
+}
+
+header .bottom-nav .menu .main-menu .logo .logo-name {
+  font-size: 18px;
+  font-weight: 800;
+}
+
+header .bottom-nav .menu .main-menu .navigation {
+  width: 60%;
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 50px;
+}
+
+header .bottom-nav .menu .main-menu .navigation .nav-menu {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  list-style: none;
+}
+
+header .bottom-nav .menu .main-menu .navigation .nav-menu a {
+  font-size: larger;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+header .bottom-nav .menu .main-menu .navigation .nav-menu a:hover {
+  text-shadow: 4px 4px 4px hsl(0, 0%, 83%);
+}
+
+header .bottom-nav .menu .main-menu .navigation .nav-menu .nav-active {
+  color: hsl(6, 82%, 59%);
+}
+
+header .bottom-nav .menu .main-menu .nav-btn {
+  padding: 5px;
+  border: 3px solid hsl(6, 82%, 59%);
+  color: hsl(6, 82%, 59%);
+  background-color: hsl(0, 0%, 100%);
+  font-weight: 800;
+}
+
 .nav-mobile-menu {
   display: none;
+}
+
+.banner {
+  width: 100%;
+  height: 90vh;
+  background-image: url("../images/home-bg-desk.png");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+}
+
+.banner .banner-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.banner .banner-content > p {
+  display: none;
+}
+
+.banner .banner-content .main-title {
+  position: relative;
+}
+
+.banner .banner-content .main-title h1 {
+  font-size: 68px;
+  font-weight: 800;
+  text-transform: uppercase;
+  width: 750px;
+}
+
+.banner .banner-content .banner-details {
+  padding: 15px;
+  border: 2px solid hsl(0, 0%, 83%);
+  border-radius: 8px;
+  background-color: hsl(0, 0%, 100%);
+  margin: 25px 0;
+  width: 750px;
+}
+
+.banner .banner-content .event-details p {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.banner .banner-content .event-details h4 {
+  font-size: 14px;
+  font-weight: 800;
+  text-decoration: underline;
+  margin: 5px 0;
 }
 
 .bar {
@@ -113,29 +223,18 @@ header .bottom-nav .menu {
     cursor: pointer;
   }
 
-  header .bottom-nav .main-menu {
+  header .bottom-nav .menu .main-menu {
     display: none;
   }
 
   .banner {
-    width: 100%;
     height: 600px;
     background-image: url("../images/mobile-background.png");
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    align-items: center;
-  }
-
-  .banner .banner-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
   }
 
   .banner .banner-content > p {
     font-size: 28px;
+    display: block;
   }
 
   .banner .banner-content .main-title {
@@ -144,23 +243,19 @@ header .bottom-nav .menu {
 
   .banner .banner-content .main-title h1 {
     font-size: 33px;
-    font-weight: 800;
-    text-transform: uppercase;
     width: 350px;
   }
 
   .banner .banner-content .banner-details {
-    padding: 15px;
-    border: 2px solid hsl(0, 0%, 83%);
-    border-radius: 8px;
-    background-color: hsl(0, 0%, 100%);
-    margin: 25px 0;
     width: 350px;
+  }
+
+  .banner .banner-content .hide-mobile {
+    display: none;
   }
 
   .banner .banner-content .event-details p {
     font-size: 14px;
-    font-weight: 400;
   }
 
   .banner .banner-content .event-details h4 {
