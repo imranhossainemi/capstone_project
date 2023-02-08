@@ -29,4 +29,6 @@ speaker.className = 'speaker';
 const s_img = document.createElement('div');
 s_img.className = 's-img';
 const s_details = document.createElement('div');
+s_details.className = 's-details';
 const s_bar = document.createElement('div');
+s_bar.className = 's-bar';
