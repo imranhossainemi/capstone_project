@@ -3,7 +3,7 @@
   <img src="5139.jpg" alt="logo" width="140"  height="auto" />
   <br/>
 
-  <h3><b>Personal Portfolio</b></h3>
+  <h3><b>Capstone Project</b></h3>
 
 </div>
 
@@ -28,7 +28,7 @@
 
 # 📖 [personal_portfoilo] <a name="about-project"></a>
 
-This is Capstone project for microvesre.
+This is Capstone project for microvesre. Original design idea by Cindy Shin in Behance.
 
 ## 🛠 Built With <a name="built-with"></a>
 This Capstone project is built with :
@@ -37,7 +37,7 @@ This Capstone project is built with :
     3. JavaScript
 ### Tech Stack <a name="tech-stack"></a>
 
-For this portfolio template design I am using mobile first approach. 
+For this projec design I am using mobile first approach create Homepage and About page. 
 <!--
 <details>
   <summary>Client</summary>
@@ -81,7 +81,7 @@ For this portfolio template design I am using mobile first approach.
 
 > You can live demo form here.
 
-- [Live Demo Link]
+- [Live Demo Link]  https://imranhossainemi.github.io/capstone_project/
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -139,12 +139,12 @@ Feel free to check the [issues page](../../issues/).
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-> All credit goes to Microverse and Figma
+> All credit goes to <a href="https://www.behance.net/adagio07"> Cindy Shin in Behance </a> for design
 
 <!-- LICENSE -->
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](./LICENSE) licensed.
+<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a>.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
