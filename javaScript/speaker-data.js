@@ -23,7 +23,19 @@ const speakerFour = {
   sImg: 'images/speak.png',
   sWords: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt, quisquam!',
 };
-const speakerDataArr = [speakerOne, speakerTwo, speakerThree, speakerFour];
+const speakerFive = {
+  sName: 'Lorem ipsum',
+  jobTitle: 'Lorem ipsum dolor sit amet',
+  sImg: 'images/speak.png',
+  sWords: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt, quisquam!',
+};
+const speakerSix = {
+  sName: 'Lorem ipsum',
+  jobTitle: 'Lorem ipsum dolor sit amet',
+  sImg: 'images/speak.png',
+  sWords: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt, quisquam!',
+};
+const speakerDataArr = [speakerOne, speakerTwo, speakerThree, speakerFour, speakerFive, speakerSix];
 const sDataArrLen = speakerDataArr.length;
 function speakerDataAdd() {
   for (let b = 0; b < sDataArrLen; b += 1) {
