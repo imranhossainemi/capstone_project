@@ -67,6 +67,7 @@ For this projec design I am using mobile first approach create Homepage and Abou
 ### Key Features <a name="key-features"></a>
 
 > Currently do not have any key features
+Responsive all devices and screen
 <!--
 - **[Validate Email Input]**
 
