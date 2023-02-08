@@ -26,15 +26,15 @@ const speakerFour = {
 const speakerDataArr = [speakerOne, speakerTwo, speakerThree, speakerFour];
 const sDataArrLen = speakerDataArr.length;
 function speakerDataAdd() {
-  for (let b = 0; b < sDataArrLen; b++) {
+  for (let b = 0; b < sDataArrLen; b += 1) {
     const speaker = document.createElement('div');
     speaker.className = 'speaker';
-    const s_img = document.createElement('div');
-    s_img.className = 's-img';
-    const s_details = document.createElement('div');
-    s_details.className = 's-details';
-    const s_bar = document.createElement('div');
-    s_bar.className = 's-bar';
+    const sPimg = document.createElement('div');
+    sPimg.className = 's-img';
+    const sPdetails = document.createElement('div');
+    sPdetails.className = 's-details';
+    const sPbar = document.createElement('div');
+    sPbar.className = 's-bar';
     const imgSpeaker = document.createElement('img');
     const sH2Name = document.createElement('h2');
     sH2Name.className = 'black';
@@ -46,14 +46,14 @@ function speakerDataAdd() {
     sH2Name.textContent = speakerDataArr[b].sName;
     sJobTitle.textContent = speakerDataArr[b].jobTitle;
     sWord.textContent = speakerDataArr[b].sWords;
-    s_img.appendChild(imgSpeaker);
-    speaker.appendChild(s_img);
+    sPimg.appendChild(imgSpeaker);
+    speaker.appendChild(sPimg);
     speakerList.appendChild(speaker);
-    s_details.appendChild(sH2Name);
-    s_details.appendChild(sJobTitle);
-    s_details.appendChild(s_bar);
-    s_details.appendChild(sWord);
-    speaker.appendChild(s_details);
+    sPdetails.appendChild(sH2Name);
+    sPdetails.appendChild(sJobTitle);
+    sPdetails.appendChild(sPbar);
+    sPdetails.appendChild(sWord);
+    speaker.appendChild(sPdetails);
     speakerList.appendChild(speaker);
   }
   return speakerList;
