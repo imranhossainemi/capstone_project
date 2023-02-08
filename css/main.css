@@ -505,7 +505,7 @@ footer .footer-content .foot-info {
 
   .featured-speakers {
     width: 100%;
-    height: 500px;
+    height: 100%;
   }
 
   .featured-speakers .fs-content .speaker-list .speaker .s-img img {
