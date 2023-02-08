@@ -30,6 +30,10 @@
 
 This is Capstone project for microvesre. Original design idea by Cindy Shin in Behance.
 
+Video description this project :-
+
+https://www.loom.com/share/adc16d6b601a443dbe39ebe75767ebc2
+
 ## 🛠 Built With <a name="built-with"></a>
 This Capstone project is built with :
     1. HTML
