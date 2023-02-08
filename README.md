@@ -30,6 +30,11 @@
 
 This is Capstone project for microvesre. Original design idea by Cindy Shin in Behance.
 
+Video description this project :-
+
+https://www.loom.com/share/adc16d6b601a443dbe39ebe75767ebc2
+
+
 ## 🛠 Built With <a name="built-with"></a>
 This Capstone project is built with :
     1. HTML
@@ -67,6 +72,7 @@ For this projec design I am using mobile first approach create Homepage and Abou
 ### Key Features <a name="key-features"></a>
 
 > Currently do not have any key features
+Responsive all devices and screen
 <!--
 - **[Validate Email Input]**
 
