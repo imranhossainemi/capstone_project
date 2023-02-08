@@ -42,6 +42,7 @@ header .top-nav {
   list-style: none;
   display: flex;
   flex-direction: row;
+  justify-content: end;
   align-items: center;
   gap: 12px;
 }
@@ -84,7 +85,7 @@ header .bottom-nav .menu .main-menu .navigation {
   height: fit-content;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: end;
   gap: 50px;
 }
 
