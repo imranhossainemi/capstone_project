@@ -41,6 +41,7 @@ header .top-nav {
   list-style: none;
   display: flex;
   flex-direction: row;
+  justify-content: end;
   align-items: center;
   gap: 12px;
 }
@@ -83,7 +84,7 @@ header .bottom-nav .menu .main-menu .navigation {
   height: fit-content;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: end;
   gap: 50px;
 }
 
@@ -235,8 +236,13 @@ header .bottom-nav .menu .main-menu .nav-btn {
   padding: 15px 0;
 }
 
+.main-program .mp-content .mp-list .mp-item:hover {
+  border: 2px solid hsl(0, 0%, 83%);
+}
+
 .featured-speakers .fs-content .speaker-list .speaker {
   width: 45%;
+  margin: 25px 0;
 }
 
 .main-program .mp-content .mp-list .mp-item p {
@@ -265,7 +271,7 @@ header .bottom-nav .menu .main-menu .nav-btn {
 
 .featured-speakers {
   width: 100%;
-  height: 500px;
+  height: 100%;
   display: flex;
   align-items: center;
 }
